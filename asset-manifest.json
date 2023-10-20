@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tis-project/static/css/main.dd1ea7b7.css",
+    "main.js": "/tis-project/static/js/main.f83e7152.js",
+    "index.html": "/tis-project/index.html",
+    "main.dd1ea7b7.css.map": "/tis-project/static/css/main.dd1ea7b7.css.map",
+    "main.f83e7152.js.map": "/tis-project/static/js/main.f83e7152.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd1ea7b7.css",
+    "static/js/main.f83e7152.js"
+  ]
+}
