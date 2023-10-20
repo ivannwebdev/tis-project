@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tis-project/static/css/main.dd1ea7b7.css",
-    "main.js": "/tis-project/static/js/main.0e75e6cf.js",
+    "main.js": "/tis-project/static/js/main.bb9c14f3.js",
     "index.html": "/tis-project/index.html",
     "main.dd1ea7b7.css.map": "/tis-project/static/css/main.dd1ea7b7.css.map",
-    "main.0e75e6cf.js.map": "/tis-project/static/js/main.0e75e6cf.js.map"
+    "main.bb9c14f3.js.map": "/tis-project/static/js/main.bb9c14f3.js.map"
   },
   "entrypoints": [
     "static/css/main.dd1ea7b7.css",
-    "static/js/main.0e75e6cf.js"
+    "static/js/main.bb9c14f3.js"
   ]
 }
