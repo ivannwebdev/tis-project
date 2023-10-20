@@ -1,5 +1,5 @@
 const savedUsers = Object.freeze({
-  get:() => JSON.parse(localStorage.getItem('users')) || [],
+  get:() => JSON.parse(localStorage.getItem('savedUsers')) || [],
 
   set: (user) => {
     const users = savedUsers.get()
@@ -10,7 +10,7 @@ const savedUsers = Object.freeze({
     users.push(user)
     const stringifiedUsers = JSON.stringify(users)
 
-    localStorage.setItem('users', stringifiedUsers)
+    localStorage.setItem('savedUsers', stringifiedUsers)
   }
 })
 

@@ -1,4 +1,4 @@
-import { Button, Modal, Row } from 'antd'
+import { Button, Modal, Row, message } from 'antd'
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { savedUsers } from '../operations/savedUsers'
@@ -9,16 +9,24 @@ function UserButtons({ user, weather }) {
   const isHomePage = pathname === '/'
   const { set } = savedUsers
   const [open, setOpen] = useState(false)
+  //const [messageApi] = message.useMessage()
 
   const showModal = () => setOpen(true)
   const handleOk = () => setOpen(false)
   const handleCancel = () => setOpen(false)
+  const handleSave = (user) => {
+    set(user)
+    message.success({
+      type: 'success',
+      content: 'User was successfully saved!'
+    })
+  }
 
   return (
     <Row justify='space-evenly'>
       <Button onClick={showModal} type='primary'>Weather</Button>
       {
-        isHomePage ? <Button onClick={() => set(user)}>Save</Button>
+        isHomePage ? <Button onClick={() => handleSave(user)}>Save</Button>
           : null
       }
 
