@@ -4,16 +4,16 @@ import { AppLayout } from './AppLayout'
 import { routes } from '../router'
 
 function AppRouter() {
-	return (
-		<Routes>
-			<Route path='/' element={<AppLayout />}>
-				{
-					routes
-						.map(route => <Route {...route} key={route.path}/>)
-				}
-			</Route>
-		</Routes>
-	)
+  return (
+    <Routes>
+      <Route path='/' element={<AppLayout />}>
+        {
+          routes
+            .map(route => <Route {...route} key={route.path}/>)
+        }
+      </Route>
+    </Routes>
+  )
 }
 
 export { AppRouter }
