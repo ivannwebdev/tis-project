@@ -9,7 +9,6 @@ function UserButtons({ user, weather }) {
   const isHomePage = pathname === '/'
   const { set } = savedUsers
   const [open, setOpen] = useState(false)
-  //const [messageApi] = message.useMessage()
 
   const showModal = () => setOpen(true)
   const handleOk = () => setOpen(false)
